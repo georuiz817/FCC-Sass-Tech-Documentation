@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"></link>
+    <link rel='stylesheet' href='index.css'></link>
+    <title>FCC-Tech-Doc</title>
+  </head>
+  <body>
+      <div class="container">
+        <div class="row">
+            <div class="col-sm-3">
+                <nav id='navbar' class="nav-inline">
+                  <header>Sass</header>
+                  <a class="nav-link" href="#Intro">Intro</a>
+                  <a class="nav-link" href="#Variables">Variables</a>
+                  <a class="nav-link" href="#Nesting">Nesting</a>
+                  <a class="nav-link" href="#Imports">Imports</a>
+                  <a class="nav-link" href="#Mixins">Mixins</a>
+                </nav>
+            </div>
+            <div class="col-sm-9">
+                <main id='main-doc'>
+                <section id='Intro' class='main-section'>
+                    <header>Intro</header>
+                    <div class='seciton-content'>
+                        <p>Sass is a CSS pre-process. It helps reduce the repetition in your code.</p>
+                        <p>With use of nesting and other tools, your CSS will also be noticibly neater and readable.</p>
+                        <p>A few others worth noting that you can take a look at are:</p>
+                        <ul>
+                            <li>Less</li>
+                            <li>CSS-Crush</li>
+                            <li>Stylus</li>
+                        </ul>
+                    </div>
+                </section>
+                <hr>
+                <section id='Variables' class='main-section'>
+                    <header>Variables</header>
+                    <p>Sass variables are names that start with $ and are assigned a value. You can then use the name instead of the value.</p>
+                    <p>Useful to keep your code DRY, do math, etc.</p>
+                    <div class='code-block'></div>
+                    <div class='code-block'>
+                        <code>
+                            $my-color: #lightblue;
+                            
+                            
+                           .button {
+                                color: my-color;<br>
+                            }
+                            
+                            
+                            .h6 {
+                                color: my-color;<br>
+                            }
+                        </code>
+                    </div>
+                </section>
+                <hr>
+                <section id='Nesting' class='main-section'>
+                    <header>Nesting</header>
+                    <p>If you're working with multiple divs or tags that are nested within parent tags, nesting will make your CSS once again easier to understand and read. You'll no longer need to call the class and insert its CSS. Then call it again with the element you want to change.</p>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <p>CSS - Here we are changing the content classes color to lightblue. However, since we want the h1's in our content class to be red. We need to recall the class with the h1 element.  </p>
+                                <div class='code-block'>
+                                    <code>
+                                        .content {
+                                            color: lightblue;
+                                        }
+
+                                        .content h1{
+                                            color: red;
+                                        }
+                                    </code>
+                                </div>
+                            </div>
+                                <div class="col-sm-6">
+                                    <p>Sass - With Sass we no longer need to re-call the class. You can nest the h1 within it's parent (.content) to change it's content. Nesting can go as deep as you'd like.</p>
+                                    <div class='code-block'>
+                                        <code>
+                                            .content{
+                                                color: lightblue;
+                                                h1{
+                                                    color: red;
+                                                }
+                                            }
+                                        </code>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id='Imports' class='main-section'>
+                    <header>Imports</header>
+                </section>
+                <section id='Mixins' class='main-section'>
+                    <header>Mixins</header>
+                </section>
+                </main> 
+            </div>
+        </div> 
+    </div>
+      
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
